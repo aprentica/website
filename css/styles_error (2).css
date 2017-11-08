@@ -1,0 +1,226 @@
+/******************** 
+		RESET
+*********************/
+html, body, div, label, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+	height:100%;
+}
+
+article, aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav, section { 
+    display:block;
+}
+
+ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/******************** 
+		LAYOUT
+*********************/
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+	color: #333333;
+	background-color: #666666;
+}
+#wrapper{
+	width: 900px; /* 950px */
+	margin: 0 auto;
+	background: url(../images/error_page_bg.gif) repeat-y left top;
+}
+header{
+	background-color: #333333;
+	color: #ffffff;
+	position: fixed;
+}
+#main{
+	padding: 20px;
+	padding-top: 74px;
+	clear: both;
+	overflow: hidden;
+}
+#content{
+	width: 900px;
+	min-height: 418px !important;
+	height: 418px;
+	position: relative;
+}
+footer {
+	padding-bottom: 20px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+/******************** 
+		HEADER
+*********************/
+header{
+	height: 54px;
+	width: 900px;
+	z-index:1000;
+}
+#main header{
+	height: auto;
+	width: auto;
+	background: none;
+	position: relative;
+	z-index:auto;
+	color: #333333;
+}
+header #logo-aprentica,
+header #searchbox,
+header #menu,
+header #menu-user,
+header nav#menu ul li{
+	float: left;
+}
+header nav#menu ul li ul li{
+	float: none;
+}
+
+/* Logo */
+header #logo-aprentica {
+	width: 177px;
+	height: 39px;
+	margin: 11px 10px 0px 10px;	
+}
+
+/******************** 
+		Message
+*********************/
+#message{
+	width: 500px; /* 535 */
+	min-height: 120px !important;
+
+	position: absolute;
+	left: 50%;
+	margin-left: -267px;
+	top: 50%;
+	margin-top: -90px; /* Half of height*/
+	padding: 15px 20px 10px 20px;
+
+	border-radius: 18px 18px 0px 18px; 
+	-moz-border-radius: 18px 18px 0px 18px; 
+	-webkit-border-radius: 18px 18px 0px 18px;
+	background-color: #333333;
+
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	
+	-moz-box-shadow: 0px 3px 10px #333;
+	-webkit-box-shadow: 0px 3px 10px #333;
+	box-shadow: 0px 3px 10px #333;
+}
+#message h1{
+	font-size: 60px;
+	margin-bottom: 7px;
+}
+#message p{
+	font-size: 23px;
+}
+#message .tip{
+	color: #ff9900;
+	font-size: 13px;
+	margin-top: 10px;
+	text-align: right;
+}
+#message .tip a{
+	color: #ff9900;
+	text-decoration: none;
+}
+#message .tip a:hover{
+	text-decoration: underline;
+}
+
+#message .tip a{
+	text-align: left;
+	margin-left: 42px;
+	padding-right: 10px;
+	background: url(../images/icon_bullet_orange_light_right.gif) no-repeat right 6px;
+}
+#message .tip a.first{
+	margin-left: 0px;
+}
+
+

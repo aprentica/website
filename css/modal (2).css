@@ -1,0 +1,182 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+
+#basic-modal-content {
+	display:none;
+}
+
+/* Overlay */
+#simplemodal-overlay {
+	background-color:#000000;
+	cursor:wait;
+}
+
+/* Container */
+#simplemodal-container {
+	width:560px;
+}
+#simplemodal-container.notification{
+	width:400px;
+}
+#simplemodal-container {
+	border-width: 5px;
+	border-style: solid;
+	font-size: 12px;
+	line-height: 14px;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	background: #ffffff;
+	border-color: #99cc00; /* Default: green */
+	-moz-box-shadow: 0px 3px 10px #333;
+	-webkit-box-shadow: 0px 3px 10px #333;
+	box-shadow: 0px 3px 10px #333;
+}
+
+#simplemodal-container.orange{
+	border-color: #fc7a00;
+}
+#simplemodal-container.orange h1.title{
+	background-color: #fc7a00;
+}
+
+#simplemodal-container.yellow{
+	border-color: #ff9900;
+}
+#simplemodal-container.yellow h1.title{
+	background-color: #ff9900;
+}
+
+
+
+#simplemodal-container h2{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+#simplemodal-container.notification h2{
+	color: #990000;
+}
+
+#simplemodal-container a.modalCloseImg {
+	background:url(../images/icons_modal_close.png) no-repeat;
+	width:25px;
+	height:25px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:2px;
+	right:7px;
+	cursor:pointer;
+}
+
+#simplemodal-container h1.title{
+	background: #99cc00;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	padding-right: 45px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#simplemodal-container .preview {
+	width: 70px;
+	height: 70px;
+	border: 3px solid #99cc00;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-bottom-right-radius: 0px;
+	-moz-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+#simplemodal-container .col2 label{
+	padding-bottom: 0px;
+}
+#simplemodal-container .col2 .left{
+	margin-top: 10px;
+}
+
+
+#simplemodal-container  .modal .style fieldset{
+	/*margin-left: 15px;*/
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#simplemodal-container  .modal {
+	padding: 15px;
+}
+#simplemodal-container  .modal fieldset,
+#simplemodal-container  .modal .footer{
+	margin-bottom: 0px;
+}
+
+
+/* Notifications */
+.notification .button{
+	color: #fc7a00;
+	float: right;
+	width: 128px;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -1000em;
+	color: #ff6600;
+	cursor: pointer;
+}
+.notification .cancel{
+	float: left;
+	margin-bottom: 0px;
+	color: #fc7a00;
+	text-indent: 0em;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	margin-top: 12px;
+}
+.notification .button.delete{
+	background: url(../images/btn_delete.png) no-repeat center top;
+}
+.notification .button.delete:hover{
+	background-position:  center bottom;
+}
+.notification .button.login{
+	width: 128px;
+	height: 32px;
+	background: url(../images/btn_login.png) no-repeat center top;
+}
+.notification .button.login:hover{
+	background-position:  center bottom;
+}
+.notification .button.ok{
+	background: url(../images/btn_ok.png) no-repeat center top;
+}
+.notification .button.ok:hover{
+	background-position:  center bottom;
+}
+.notification  .warning,
+.notification  .note{
+	font-weight: bold;
+	color: #fc7a00;
+}
+.notification p{
+	margin-bottom: 20px;
+}
+
+#simplemodal-container .style fieldset{
+	padding-left: 15px;
+	padding-right: 15px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML >
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+			
+		<meta charset="utf-8" />
+		
+		<title>aprentica | 403</title>
+		
+		<link rel="stylesheet" href="css/styles_error.css" />
+		
+		
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+						
+		<!--[if IE]>
+		<script type="text/javascript" src="js/jquery.corner.js"></script>
+		<script>
+			$('document').ready(function(){
+				
+				//Agrego bordes redondeados en IE
+				
+				$('.box').each(function(){
+								
+				color = $(this).css('border-color');				
+				$(this).wrapInner('<div class="rc" />').css('background',
+					color
+				);
+
+				$(this).children('.rc').corner("round 8px").css({background: 'white', padding: '15px'}).parent().css('padding', $(this).css('border-width')).corner("round 10px");
+				});				
+			});
+		</script>
+		<![endif]-->
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			
+			<header>
+			
+				<div id="logo-aprentica">
+					<img src="images/logo_aprentica.png" alt="Aprentica (beta)" />
+				</div>
+				
+			</header>
+
+			<div id="main">
+				<div id="content">
+				
+						<section id="message" class="error-403">
+							<h1>We are sorry,</h1>
+							<p>We are working to update Aprentica.<p>
+							<div class="tip"><a href="mailto:info@aprentica.com">Email Us for more info</a></div>
+						</section>
+				
+				</div><!-- #content -->	
+			</div><!-- #main -->
+		
+			<footer>Aprentica is no longer available</footer>
+
+		</div><!-- #wrapper -->
+	</body>
+</html>
